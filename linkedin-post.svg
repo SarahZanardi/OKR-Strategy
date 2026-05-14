@@ -1,0 +1,136 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="1200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111C27"/>
+      <stop offset="0.52" stop-color="#1E627A"/>
+      <stop offset="1" stop-color="#1F8A6D"/>
+    </linearGradient>
+    <linearGradient id="card" x1="200" y1="260" x2="1040" y2="950" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EEF5F2"/>
+    </linearGradient>
+    <filter id="shadow" x="80" y="190" width="1040" height="900" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="28" stdDeviation="36" flood-color="#071018" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1200" fill="url(#bg)"/>
+  <circle cx="980" cy="220" r="360" stroke="white" stroke-opacity="0.16" stroke-width="2"/>
+  <circle cx="980" cy="220" r="230" stroke="white" stroke-opacity="0.12" stroke-width="2"/>
+  <path d="M0 832C178 750 330 744 480 812C647 888 782 901 964 826C1060 786 1142 775 1200 782V1200H0V832Z" fill="#EAF0ED"/>
+
+  <text x="92" y="120" fill="#DDEBE6" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" letter-spacing="4">
+    PROJETO FINAL | GESTAO ESTRATEGICA DE OKRS
+  </text>
+  <text x="92" y="205" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="800">
+    OKR Performance
+  </text>
+  <text x="92" y="286" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="800">
+    Monitor
+  </text>
+  <text x="94" y="348" fill="#DDEBE6" font-family="Arial, Helvetica, sans-serif" font-size="30">
+    Painel interativo para acompanhar objetivos,
+  </text>
+  <text x="94" y="388" fill="#DDEBE6" font-family="Arial, Helvetica, sans-serif" font-size="30">
+    resultados-chave e pontos de atencao do ciclo.
+  </text>
+
+  <g filter="url(#shadow)">
+    <rect x="96" y="460" width="1008" height="548" rx="28" fill="url(#card)"/>
+    <rect x="128" y="500" width="944" height="84" rx="18" fill="#14202B"/>
+    <text x="164" y="553" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">
+      Objetivos e resultados-chave do ciclo
+    </text>
+    <rect x="870" y="520" width="166" height="44" rx="12" fill="#1F8A6D"/>
+    <text x="898" y="550" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">
+      + objetivo
+    </text>
+
+    <g>
+      <rect x="142" y="626" width="292" height="300" rx="18" fill="white" stroke="#D8E2DE"/>
+      <rect x="142" y="626" width="8" height="300" rx="4" fill="#C87924"/>
+      <circle cx="394" cy="666" r="16" fill="#C87924" fill-opacity="0.22"/>
+      <circle cx="394" cy="666" r="7" fill="#C87924"/>
+      <text x="174" y="681" fill="#14202B" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" letter-spacing="3">
+        TRIMESTRE 1
+      </text>
+      <text x="174" y="728" fill="#14202B" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="800">
+        Testar novas ideias
+      </text>
+      <text x="174" y="762" fill="#14202B" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="800">
+        com usuarios reais
+      </text>
+      <rect x="174" y="804" width="226" height="12" rx="6" fill="#E7ECEA"/>
+      <rect x="174" y="804" width="147" height="12" rx="6" fill="#C87924"/>
+      <text x="174" y="858" fill="#14202B" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">
+        63%
+      </text>
+      <text x="310" y="855" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">
+        em evolucao
+      </text>
+    </g>
+
+    <g>
+      <rect x="454" y="626" width="292" height="300" rx="18" fill="white" stroke="#D8E2DE"/>
+      <rect x="454" y="626" width="8" height="300" rx="4" fill="#1F8A6D"/>
+      <circle cx="706" cy="666" r="16" fill="#1F8A6D" fill-opacity="0.22"/>
+      <circle cx="706" cy="666" r="7" fill="#1F8A6D"/>
+      <text x="486" y="681" fill="#14202B" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" letter-spacing="3">
+        TRIMESTRE 1
+      </text>
+      <text x="486" y="728" fill="#14202B" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="800">
+        Conectar estrategia
+      </text>
+      <text x="486" y="762" fill="#14202B" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="800">
+        e execucao
+      </text>
+      <rect x="486" y="804" width="226" height="12" rx="6" fill="#E7ECEA"/>
+      <rect x="486" y="804" width="166" height="12" rx="6" fill="#1F8A6D"/>
+      <text x="486" y="858" fill="#14202B" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">
+        73%
+      </text>
+      <text x="622" y="855" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">
+        no alvo
+      </text>
+    </g>
+
+    <g>
+      <rect x="766" y="626" width="292" height="300" rx="18" fill="white" stroke="#D8E2DE"/>
+      <rect x="766" y="626" width="8" height="300" rx="4" fill="#BC4444"/>
+      <circle cx="1018" cy="666" r="16" fill="#BC4444" fill-opacity="0.22"/>
+      <circle cx="1018" cy="666" r="7" fill="#BC4444"/>
+      <text x="798" y="681" fill="#14202B" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" letter-spacing="3">
+        TRIMESTRE 1
+      </text>
+      <text x="798" y="728" fill="#14202B" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="800">
+        Organizar ideias
+      </text>
+      <text x="798" y="762" fill="#14202B" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="800">
+        do time
+      </text>
+      <rect x="798" y="804" width="226" height="12" rx="6" fill="#E7ECEA"/>
+      <rect x="798" y="804" width="83" height="12" rx="6" fill="#BC4444"/>
+      <text x="798" y="858" fill="#14202B" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">
+        37%
+      </text>
+      <text x="934" y="855" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">
+        atencao
+      </text>
+    </g>
+  </g>
+
+  <g>
+    <rect x="92" y="1060" width="300" height="58" rx="16" fill="white" fill-opacity="0.16" stroke="white" stroke-opacity="0.22"/>
+    <text x="124" y="1098" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">
+      HTML + CSS + JavaScript
+    </text>
+    <rect x="420" y="1060" width="250" height="58" rx="16" fill="white" fill-opacity="0.16" stroke="white" stroke-opacity="0.22"/>
+    <text x="452" y="1098" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">
+      Interface responsiva
+    </text>
+    <rect x="698" y="1060" width="260" height="58" rx="16" fill="white" fill-opacity="0.16" stroke="white" stroke-opacity="0.22"/>
+    <text x="730" y="1098" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">
+      Gestao de OKRs
+    </text>
+  </g>
+</svg>
