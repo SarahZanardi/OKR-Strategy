@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OKR Performance Monitor | Inovação</title>
+    <meta name="description" content="Monitor interativo para acompanhamento de OKRs, progresso dos resultados-chave e pontos de atenção do ciclo.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="ambient-field" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Projeto final | Gestão estratégica de OKRs</p>
+        <h1>OKR Performance Monitor</h1>
+        <p class="hero-copy">Monitor interativo para acompanhar objetivos, medir o avanço dos resultados-chave e identificar pontos de atenção durante o ciclo.</p>
+      </div>
+      <div class="summary" aria-label="Resumo geral">
+        <span id="objectiveCount">0 objetivos</span>
+        <strong id="averageProgress">0%</strong>
+        <small>pulso médio</small>
+      </div>
+    </header>
+
+    <main class="shell">
+      <section class="workspace" aria-label="Painel de OKRs">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Ciclo atual</p>
+            <h2>Objetivos e resultados-chave do ciclo</h2>
+          </div>
+          <button class="primary-button" id="addObjective" type="button">Novo objetivo</button>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filtros">
+          <button class="filter-button active" data-filter="all" type="button">Todos</button>
+          <button class="filter-button" data-filter="low" type="button">Atenção</button>
+          <button class="filter-button" data-filter="medium" type="button">Em evolução</button>
+          <button class="filter-button" data-filter="high" type="button">No alvo</button>
+        </div>
+
+        <div class="radar-stage" aria-hidden="true">
+          <span class="radar-ring ring-one"></span>
+          <span class="radar-ring ring-two"></span>
+          <span class="radar-ring ring-three"></span>
+          <span class="radar-sweep"></span>
+          <span class="radar-core">OKR</span>
+        </div>
+
+        <div class="okr-grid" id="okrGrid"></div>
+      </section>
+
+      <aside class="insights" aria-label="Insights de gestão">
+        <section class="project-card">
+          <p class="eyebrow">Entrega</p>
+          <h2>Monitor de desempenho de OKRs</h2>
+          <p>O painel consolida objetivos, progresso dos resultados-chave e sinais de atenção para apoiar os check-ins do trimestre.</p>
+        </section>
+
+        <section>
+          <p class="eyebrow">Ritual semanal</p>
+          <h2>Acompanhamento semanal</h2>
+          <label><input type="checkbox"> Revisar confiança dos KRs</label>
+          <label><input type="checkbox"> Atualizar aprendizados</label>
+          <label><input type="checkbox"> Remover bloqueios</label>
+          <label><input type="checkbox"> Alinhar próximos experimentos</label>
+        </section>
+
+        <section>
+          <p class="eyebrow">Princípio do curso</p>
+          <blockquote>
+            OKRs ajudam a transformar objetivos grandes em prioridades mais claras para o time acompanhar durante o ciclo.
+          </blockquote>
+        </section>
+
+        <section class="formula">
+          <p class="eyebrow">Leitura rápida</p>
+          <div>
+            <strong>0-39%</strong>
+            <span>Atenção</span>
+          </div>
+          <div>
+            <strong>40-69%</strong>
+            <span>Em evolução</span>
+          </div>
+          <div>
+            <strong>70-100%</strong>
+            <span>No alvo</span>
+          </div>
+        </section>
+      </aside>
+    </main>
+
+    <template id="objectiveTemplate">
+      <article class="okr-card">
+        <div class="card-header">
+          <div>
+            <p class="eyebrow card-cycle"></p>
+            <h3 contenteditable="true" spellcheck="true"></h3>
+          </div>
+          <button class="icon-button remove-objective" type="button" aria-label="Remover objetivo">×</button>
+        </div>
+        <div class="progress-track" aria-hidden="true">
+          <span></span>
+        </div>
+        <div class="card-meta">
+          <strong class="progress-label">0%</strong>
+          <span class="status-label">Atenção</span>
+        </div>
+        <div class="kr-list"></div>
+        <button class="ghost-button add-kr" type="button">Resultado-chave</button>
+      </article>
+    </template>
+
+    <template id="krTemplate">
+      <div class="kr-row">
+        <input class="kr-title" type="text" aria-label="Resultado-chave">
+        <input class="kr-progress" type="range" min="0" max="100" step="5" aria-label="Progresso do resultado-chave">
+        <span class="kr-value">0%</span>
+        <button class="icon-button remove-kr" type="button" aria-label="Remover resultado-chave">×</button>
+      </div>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
